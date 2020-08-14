@@ -41,10 +41,30 @@ const Layout: React.FC<Props> = ({ children }) => {
           display: `flex`,
           flexDirection:`column`,
           minHeight:`100vh`,
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0px 1.0875rem 1.45rem`,
+          paddingTop: 0,
         }}
       >
         <main>{children}</main>
         <footer>
+          <nav>
+            <ul>
+              <li> Home </li>
+              <li> Blog </li>
+              <li> Contact </li>
+            </ul>
+            <ul>
+              <li> Github </li>
+              <li> LinkedIn </li>
+              <li> Twitter </li>
+            </ul>
+            <ul>
+              <li> Potan </li>
+              <li> Hackasuly </li>
+            </ul>
+          </nav>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
