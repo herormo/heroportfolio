@@ -20,6 +20,31 @@ const IndexPage = () => (
         <Image />
       </div> */}
     </section>
+    <section className='latestBlogs'>
+      <div>
+        <h3> Latest blog posts</h3>
+      </div>
+      <div className="item">
+        <div className="date"> 15.08.2020</div>
+        <div className="title"> Writing My First Blog </div>
+      </div>
+      <div className="item">
+        <div className="date"> 15.08.2020</div>
+        <div className="title"> Writing My First Blog </div>
+      </div>
+      <div className="item">
+        <div className="date"> 15.08.2020</div>
+        <div className="title"> Writing My First Blog </div>
+      </div>
+      <div className="item">
+        <div className="date"> 15.08.2020</div>
+        <div className="title"> Writing My First Blog </div>
+      </div>
+      <div className="item">
+        <div className="date"> 15.08.2020</div>
+        <div className="title"> Writing My First Blog </div>
+      </div>
+    </section>
   </Layout>
 )
 
