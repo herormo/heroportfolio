@@ -23,14 +23,14 @@ summary {
 }
 header {
   width: 100%;
-  position: fixed;
   z-index: 1;
   box-sizing: border-box;
   background-color: white;
-  top: 0px;
-  padding: 0 1rem 0 1rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 0 1.5rem;
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
 }
 
 main {

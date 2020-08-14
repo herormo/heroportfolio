@@ -42,8 +42,8 @@ const Layout: React.FC<Props> = ({ children }) => {
           flexDirection:`column`,
           minHeight:`100vh`,
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
+          maxWidth: 1200,
+          padding: `0px 1.5rem 1.5rem`,
           paddingTop: 0,
         }}
       >
@@ -65,9 +65,8 @@ const Layout: React.FC<Props> = ({ children }) => {
               <li> Hackasuly </li>
             </ul>
           </nav>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+
+          Copyright © Hero Mohammed {new Date().getFullYear()}
         </footer>
       </div>
     </>

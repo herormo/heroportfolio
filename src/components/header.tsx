@@ -11,14 +11,14 @@ const Header: React.FC<Props> = ({ siteTitle, menuLinks }) => (
   <header
     style={{
       background: `white`,
-      marginBottom: `1.45rem`,
+      marginBottom: `1.5rem`,
     }}
   >
     <div
       style={{
         margin: `0`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        maxWidth: 1200,
+        padding: `1.5rem 0rem`,
       }}
     >
       <h5 style={{ margin: 0 }}>
