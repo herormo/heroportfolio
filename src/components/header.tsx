@@ -1,35 +1,61 @@
 import { Link } from "gatsby"
 import React from "react"
 
-interface Props {
-  siteTitle?: string
+
+export interface Props {
+  siteTitle?: string;
+  menuLinks: any;
 }
 
-const Header: React.FC<Props> = ({ siteTitle }) => (
+const Header: React.FC<Props> = ({ siteTitle, menuLinks }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `white`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
+        margin: `0`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h5 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
           }}
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h5>
+    </div>
+    <div>
+      <nav>
+        <ul style={{ display: "flex", flex: 1 }}>
+          {menuLinks.map((link: any) =>(
+            <li
+            key={link.name}
+            style={{
+              listStyleType:`none`,
+              padding:`1rem`
+            }}
+            >
+              <Link 
+              style={{
+                color:'black', 
+                textDecoration: `none`,
+                }} 
+                to={link.link}>
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   </header>
 )

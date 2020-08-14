@@ -16,20 +16,26 @@ const useSiteTitle = () => {
         site {
           siteMetadata {
             title
+              menuLinks {
+                name
+                link
+              }
           }
         }
       }
     `
   )
-  return oc(data).site.siteMetadata.title("")
+  // return oc(data).site.siteMetadata.title("")
+  return oc(data).site.siteMetadata;
 }
 
+
 const Layout: React.FC<Props> = ({ children }) => {
-  const title = useSiteTitle()
+  const headerData = useSiteTitle()
 
   return (
     <>
-      <Header siteTitle={title} />
+      <Header menuLinks={headerData.menuLinks("")} siteTitle={headerData.title("")} />
       <div
         style={{
           margin: `0 auto`,
