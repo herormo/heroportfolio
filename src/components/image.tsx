@@ -18,7 +18,7 @@ import { ImageQueryQuery } from "../graphqltypes"
 const Image: React.FC = () => {
   const data: ImageQueryQuery = useStaticQuery(graphql`
     query ImageQuery {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+      placeholderImage: file(relativePath: { eq: "hero.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
